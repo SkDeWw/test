@@ -1,3 +1,5 @@
+package sicher
+
 import dev.fritz2.dom.html.render
 import dev.fritz2.dom.mount
 
