@@ -5,28 +5,25 @@ plugins {
 
 repositories {
     jcenter()
-    maven("https://dl.bintray.com/jwstegemann/fritz2")
 }
 
 kotlin {
     kotlin {
-        jvm()
         js(LEGACY).browser()
 
         sourceSets {
             val commonMain by getting {
                 dependencies {
                     implementation(kotlin("stdlib"))
-                    implementation("dev.fritz2:styling:0.8")
-                    implementation("dev.fritz2:components:0.8")
-                }
-            }
-            val jvmMain by getting {
-                dependencies {
+                    // implementation("dev.fritz2:components:0.8")
+                    // implementation("dev.fritz2:styling:0.8")
+                    // implementation("dev.fritz2:core:0.8")
+                    // implementation("dev.fritz2:components:0.8")
                 }
             }
             val jsMain by getting {
                 dependencies {
+
                 }
             }
         }
